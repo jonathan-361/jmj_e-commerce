@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import JMJIcon from "../../../components/custom/JMJIcon";
+import JMJIcon from "../../../components/custom/SVG/JMJIcon";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router";
 import paths from "@/modules/core/routes/paths/paths";
@@ -22,30 +22,28 @@ function StatusPage({
   return (
     <div className="relative h-screen w-screen" style={{ backgroundColor }}>
       {/* Navbar */}
-      <nav className="absolute left-0 top-0 p-4">
-        <JMJIcon className="h-30 w-30" />
+      <nav className="absolute left-0 top-0 p-4 text-white">
+        <JMJIcon className="h-20 w-auto" />
       </nav>
-
       {/* Contenido centrado */}
-      <div className="flex h-full flex-col items-center justify-center gap-4 text-center">
+      <div className="flex h-full flex-col items-center justify-center gap-4 text-center text-white">
         {icon}
 
         {title && (
-          <h1 className="text-4xl font-semibold tracking-tight text-white">
+          <h1 className="text-5xl font-semibold tracking-tight text-white">
             {title}
           </h1>
         )}
 
         {description && (
-          <p className="max-w-md text-base leading-relaxed text-muted-foreground">
+          <p className="max-w-md whitespace-pre-line text-lg leading-relaxed">
             {description}
           </p>
         )}
 
         <Button
-          size="lg"
           onClick={() => navigate(paths.login)}
-          className="mt-4 !bg-[#397bc3] !text-white hover:!bg-[#4aa8f5]"
+          className="mt-4 !bg-[#397bc3] !text-white !text-xl hover:!bg-[#4aa8f5]"
         >
           Volver al inicio
         </Button>

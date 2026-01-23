@@ -1,12 +1,12 @@
-import Error from "../../../components/custom/Error";
+import Error404Icon from "../../../components/custom/SVG/Error404Icon";
 import StatusPage from "../components/Status";
 
 function Error404() {
   return (
     <StatusPage
-      icon={<Error className="h-80 w-80" />}
-      title="Error 404"
-      description="Ocurrió un problema interno en el servidor. Intenta más tarde."
+      icon={<Error404Icon className="h-90 w-auto" />}
+      description={`No encontramos lo que buscas
+      Tal vez la página se movió o la dirección no es correcta.`}
     />
   );
 }

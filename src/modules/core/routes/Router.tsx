@@ -8,11 +8,12 @@ import Error400 from "../../errors/pages/error_400";
 import Error401 from "../../errors/pages/error_401";
 import Error403 from "../../errors/pages/error_403";
 import Error404 from "../../errors/pages/error_404";
+import LoginPage from "@/modules/auth/pages/Login";
 
 function AppRouter() {
   return (
     <Routes>
-      <Route path={paths.login} element={<Error400 />} />
+      <Route path={paths.login} element={<LoginPage />} />
       <Route path={paths.register} element={<Error400 />} />
       <Route path={paths.forgotPassword} element={<Error400 />} />
 

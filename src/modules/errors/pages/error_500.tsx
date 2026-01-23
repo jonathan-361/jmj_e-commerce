@@ -1,12 +1,12 @@
-import Error from "../../../components/custom/Error";
+import Error500Icon from "../../../components/custom/SVG/Error500Icon";
 import StatusPage from "../components/Status";
 
 function Error500() {
   return (
     <StatusPage
-      icon={<Error className="h-80 w-80" />}
-      title="Error 500"
-      description="Ocurrió un problema interno en el servidor. Intenta más tarde."
+      icon={<Error500Icon className="h-90 w-auto text-white" />}
+      description={`Ups… algo salió mal de nuestro lado
+      Estamos trabajando para solucionarlo lo antes posible.`}
     />
   );
 }
