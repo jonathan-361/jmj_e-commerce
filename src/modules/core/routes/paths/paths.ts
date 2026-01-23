@@ -1,5 +1,8 @@
 const paths = {
   test: "/",
+  login: "/login",
+  register: "/register",
+  forgotPassword: "/forgot-password",
   error400: "/400",
   error401: "/401",
   error403: "/403",

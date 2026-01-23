@@ -12,6 +12,10 @@ import Error404 from "../../errors/pages/error_404";
 function AppRouter() {
   return (
     <Routes>
+      <Route path={paths.login} element={<Error400 />} />
+      <Route path={paths.register} element={<Error400 />} />
+      <Route path={paths.forgotPassword} element={<Error400 />} />
+
       <Route path={paths.error400} element={<Error400 />} />
       <Route path={paths.error401} element={<Error401 />} />
       <Route path={paths.error403} element={<Error403 />} />

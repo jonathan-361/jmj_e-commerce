@@ -31,7 +31,7 @@ const JMJIcon = ({ className }: JMJIconProps) => {
           <text
             x="63.66"
             y="48.53"
-            fill="#1d1d1b"
+            fill="#FFFFFF"
             fontSize={26}
             fontFamily="Bree Serif, serif"
           >
@@ -41,7 +41,7 @@ const JMJIcon = ({ className }: JMJIconProps) => {
           <text
             x="111.2"
             y="73.48"
-            fill="#1d1d1b"
+            fill="#FFFFFF"
             fontSize={26}
             fontFamily="Bree Serif, serif"
           >
