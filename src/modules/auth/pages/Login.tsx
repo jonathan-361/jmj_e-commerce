@@ -6,28 +6,21 @@ import JMJIcon from "@/components/custom/SVG/JMJIcon";
 
 export default function LoginPage() {
   return (
-    /* SCREEN */
     <main className="min-h-screen w-full bg-[#FCE6C4] flex items-center justify-center">
-      {/* CENTER WRAPPER */}
       <section className="w-full max-w-5xl px-6">
-        {/* LOGIN CARD */}
         <div className="w-full flex rounded-2xl overflow-hidden shadow-2xl bg-white">
-          {/* LEFT PANEL */}
           <aside className="hidden md:flex w-1/2 bg-[#F7D9A8] flex-col items-center justify-center p-10">
             <JMJIcon className="w-60 mb-10" />
             <img src={BrandMascot} alt="Brand mascot JMJ" className="w-64" />
           </aside>
 
-          {/* RIGHT PANEL */}
           <article className="w-full md:w-1/2 flex items-center justify-center p-10">
-            {/* CONTENT */}
             <div className="w-full max-w-sm">
               <h1 className="text-3xl font-bold text-center text-gray-900">
                 Te damos la bienvenida
               </h1>
               <p className="text-center text-gray-700 mb-6">a JMJ Guayaberas</p>
 
-              {/* SOCIAL */}
               <div className="space-y-3 mb-6">
                 <Button className="w-full flex justify-center gap-2 bg-black text-white">
                   <img
