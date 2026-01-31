@@ -3,6 +3,7 @@ const paths = {
   login: "/login",
   register: "/register",
   forgotPassword: "/forgot-password",
+  PrincipalPage: "/home",
   error400: "/400",
   error401: "/401",
   error403: "/403",

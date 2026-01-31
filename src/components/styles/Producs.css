@@ -1,0 +1,135 @@
+/* =========================
+   SECCIÓN CATÁLOGO
+========================= */
+
+#CatalogoGuayaberas {
+  margin: 40px auto;
+  width: 90%;
+  max-width: 1300px;
+}
+
+.Cont-gen {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+/* --- TEXTO SUPERIOR --- */
+.titulo-seccion {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.titulo-seccion h2 {
+  font-size: 42px;
+  margin: 5px 0;
+}
+
+.titulo-seccion h4 {
+  font-size: 20px;
+  margin: 0;
+}
+
+/* =========================
+   GRID DE CARDS (3 COLUMNAS)
+========================= */
+
+.contenedor-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* SIEMPRE 3 */
+  gap: 30px;
+  justify-items: center;
+}
+
+/* =========================
+   PRODUCT CARD
+========================= */
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 350px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin: 15px 0 5px;
+}
+
+.card .precio {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* =========================
+   COLORES
+========================= */
+
+.colores {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.color {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+}
+
+.color.blanco {
+  background: #ffffff;
+}
+
+.color.beige {
+  background: #e6d8c3;
+}
+
+.color.negro {
+  background: #000000;
+}
+
+/* =========================
+   ACCIONES
+========================= */
+
+.acciones {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.acciones input {
+  width: 55px;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+  text-align: center;
+}
+
+.acciones button {
+  padding: 8px 14px;
+  background: #111;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.acciones button:hover {
+  background: #333;
+}

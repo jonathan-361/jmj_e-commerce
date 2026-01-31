@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Serif 4", serif;
+}
+
+ body, #root {
+  width: 100%;
+  height: 100%;
+  background: #FFF7EA;
+
+}
+
+/* seccion general */
+section {
+    max-width: 1150px;
+    margin: 60px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 50px;
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+
+/* Seccion de colección */
+
+#Colección{
+    background: #FCE6C4;
+}
+
+#Temporada {
+    max-width: 450px;
+}
+
+#Temporada h2 {
+    font-size: 40px;
+    margin-bottom: 15px;    
+}
+
+#Temporada p {
+    font-size: 17px;
+    color: #444;
+    margin-bottom: 25px;
+}
+
+#Temporada button {
+    background: white;
+    color: black;
+    padding: 12px 24px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+#Modelo {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Modelo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Círculo blanco grande */
+.circulo-blanco {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    top: -30px;
+    right: 10px;
+    z-index: 3;
+}
+
+.circulo-blanco2 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    top: 300px;
+    left: -10px;
+    z-index: 3;
+}
+
+
+/* Punto morado arriba */
+.punto_arriba {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #a48cff;
+    border-radius: 50%;
+    top: 40px;
+    left: -20px;
+    z-index: 3;
+}
+
+/* Punto morado abajo */
+.punto_abajo {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #a48cff;
+    border-radius: 50%;
+    bottom: 30px;
+    right: -15px;
+    z-index: 3;
+}
+
+
+/* Fin de la seccion de Colección*/
+
+/* Seccion de novedades*/
+#Novedades {
+    display: grid;
+    grid-template-columns: 4fr; 
+    margin-right: 22.5%;
+}
+#Novedades .Contenedor {
+    display: flex;
+    gap: 20px; 
+    
+}
+
+/* --------------------------
+    COLUMNA IZQUIERDA
+---------------------------- */
+/* Columna izquierda — solo la tarjeta Top */
+.columna-izquierda {
+    display: block; /* ya no grid */
+}
+
+/* Columna derecha — tarjetas Infantil y Formal */
+.columna-derecha {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* espacio entre las dos tarjetas */
+}
+
+  
+
+/* TARJETA BASE para Infantil / Formal */
+.Infantil, .Formal {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    background: #000; /* fondo por si la imagen tarda */
+}
+
+.Top img,
+.Infantil img,
+.Formal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.55); /* oscurecer imagen para que el texto resalte */
+}
+
+/* --------------------------
+    TARJETA TOP (DOBLE ALTURA)
+---------------------------- */
+/* Tarjeta Top */
+.Top {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 20px;   
+    width: 450px;
+} 
+
+/* --------------------------
+    TARJETAS PEQUEÑAS (Infantil & Formal)
+---------------------------- */
+.Infantil, .Formal {
+    height: 240px;
+    width: 450px;
+}
+
+/* --------------------------
+   TEXTO SOBRE LA IMAGEN
+---------------------------- */
+.Top h3,
+.Infantil h4,
+.Formal h4 {
+    position: absolute;
+    bottom: 60px;
+    left: 20px;
+    color: white;
+    font-weight: 700;
+    max-width: 75%;
+    line-height: 1.2;
+}
+
+/* Ajustes de tipografía */
+.Top h3 {
+    font-size: 1.9rem;
+}
+.Infantil h4, .Formal h4 {
+    font-size: 1.3rem;
+}
+
+/* --------------------------
+   BOTONES SOBRE LA IMAGEN
+---------------------------- */
+.Top button,
+.Infantil button,
+.Formal button {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.Top button:hover,
+.Infantil button:hover,
+.Formal button:hover {
+    transform: scale(1.05);
+}
+
+/* --------------------------
+   COLUMNA DERECHA — PELUCHE
+---------------------------- */
+.Peluche {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    padding: 20px;
+}
+
+.Peluche img {
+    width: 310px;
+    height: 310px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid #eee;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.Peluche h2 {
+    margin-top: 10px;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.Peluche button {
+    background: white;
+    color: black;
+    padding: 12px 24px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
